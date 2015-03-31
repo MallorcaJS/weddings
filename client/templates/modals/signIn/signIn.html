@@ -1,0 +1,22 @@
+<template name="signIn">
+  {{#ionModal title=""}}
+
+    <div class="padding text-center sign-in-modal">
+      <p>
+        <img src="/favicon-160x160.png" width=80 height=80 />
+        <br>
+        <strong>Hey! Please sign in to do that :)</strong>
+      </p>
+
+      <p>
+        <button data-action="sign-in" class="button button-facebook sign-in-button">
+          <!-- <img src="/images/meteor-icon.png" width=25 height=25 />  -->
+          <!-- <i icon="ion-social-facebook" width=25 height=25></i> -->
+          {{> ionIcon icon='ion-social-facebook'}}
+          Sign in with Facebook
+        </button>
+      </p>
+    </div>
+
+  {{/ionModal}}
+</template>

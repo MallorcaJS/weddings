@@ -1,0 +1,15 @@
+<template name="_weddingItem">
+  {{#with wedding}}
+    {{#ionItem path=../path iconLeft=false iconRight=true}}
+      <!-- {{> _voteButton}} -->
+      <h2>{{name}}</h2>
+      <p>
+        {{place}}
+      </p>
+      <span class="comments-count">
+        {{numberOfComments}}
+        {{> ionIcon icon="ios-chatbubble" }}
+      </span>
+    {{/ionItem}}
+  {{/with}}
+</template>

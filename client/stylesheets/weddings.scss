@@ -1,0 +1,42 @@
+@import 'app-mixins';
+@import 'app-variables';
+
+// Ionic
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
+.item-weddingsShow{
+  min-height: 300px;
+  background: url('images/michica.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.button.attend-button {
+  width: 30px;
+  max-width: 30px;
+  min-width: 30px;
+  padding: 20px 0 0 0;
+  // position: absolute;
+  // top: 16px;
+  // left: 16px;
+  font-size: 12px;
+  border: 0;
+  border-radius: $border-radius-base;
+  line-height: 20px;
+
+  &.has-voted {
+    .icon {
+      color: $green;
+    }
+  }
+
+  .icon {
+    height: 20px;
+    top: 4px;
+
+    &:before {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
